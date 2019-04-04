@@ -11,18 +11,19 @@ public enum Armours {
     GucciHat("Gucci Baseball cap", 110);
 
 
-    private final String name, int value;
+    private final String name;
+    private int value;
 
     Armours(String name, int value) {
         this.name = name;
         this.value = value;
     }
 
-    public String getName() {
+    public String getArmourName() {
         return name;
     }
 
-    public int getValue() {
+    public int getArmourValue() {
         return value;
     }
 

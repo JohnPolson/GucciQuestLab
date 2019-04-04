@@ -16,18 +16,19 @@ public enum Weapons {
     Sythe("Sythe",35);
 
 
-    private final String name, int value;
+     private final String name;
+     private int value;
 
     Weapons(String name, int value) {
         this.name = name;
         this.value = value;
     }
 
-    public String getName() {
+    public String getWeaponName() {
         return name;
     }
 
-    public int getValue() {
+    public int getWeaponValue() {
         return value;
     }
 

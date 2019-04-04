@@ -10,19 +10,20 @@ public enum Creatures {
     GucciGriffin("Gucci Griffin", 155),
     GrumpyBear("George the Bear", 90 );
 
-    
-    private final String name, int value;
+
+    private final String name;
+    private int value;
 
     Creatures(String name, int value) {
         this.name = name;
         this.value = value;
     }
 
-    public String getName() {
+    public String getCreatureName() {
         return name;
     }
 
-    public int getValue() {
+    public int getCreatureValue() {
         return value;
     }
 
