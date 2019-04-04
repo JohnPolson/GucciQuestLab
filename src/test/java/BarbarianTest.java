@@ -35,4 +35,65 @@ public class BarbarianTest {
         assertEquals(99,barbarian.getHealth());
     }
 
+    @Test
+    public void hasNoWeapons() {
+        assertEquals(0, barbarian.getWeaponCount());
+    }
+
+    @Test
+    public void canAddWeapon() {
+        barbarian.addWeapon(Weapons.Axe);
+        assertEquals(1, barbarian.getWeaponCount());
+    }
+
+    @Test
+    public void canRemoveWeapon() {
+        barbarian.addWeapon(Weapons.GucciSpear);
+        barbarian.addWeapon(Weapons.Chainsaw);
+        barbarian.removeWeapon(Weapons.Chainsaw);
+        assertEquals(1, barbarian.getWeaponCount());
+    }
+
+    @Test
+    public void hasNoArmours() {
+        assertEquals(0, barbarian.getArmourCount() );
+    }
+
+    @Test
+    public void canAddArmour() {
+        barbarian.addArmours(Armours.Chainmail);
+        assertEquals(1, barbarian.getArmourCount());
+    }
+
+    @Test
+    public void canRemoveArmour() {
+        barbarian.addArmours(Armours.SuitOfArmour);
+        barbarian.addArmours(Armours.GucciHat);
+        barbarian.removeArmour(Armours.SuitOfArmour);
+        assertEquals(1, barbarian.getArmourCount());
+    }
+
+    @Test
+    public void hasEmptyBag() {
+        assertEquals(0, barbarian.getTreasureCount());
+    }
+
+    @Test
+    public void canAddToBag() {
+        barbarian.addTreasures(Treasures.Diamond);
+        barbarian.addTreasures(Treasures.GucciTiara);
+        assertEquals(2, barbarian.getTreasureCount());
+    }
+
+    @Test
+    public void canRemoveFromBag() {
+        barbarian.addTreasures(Treasures.Diamond);
+        barbarian.addTreasures(Treasures.GucciTiara);
+        barbarian.removeTreasure(Treasures.Diamond);
+        assertEquals(1, barbarian.getTreasureCount());
+    }
+
+
+
+
 }

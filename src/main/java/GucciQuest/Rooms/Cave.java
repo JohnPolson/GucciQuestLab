@@ -15,4 +15,17 @@ public class Cave extends Room {
         this.creatures = creatures;
         this.treasures = treasures;
     }
+
+    public int getCreatureCount() {
+        return this.creatures.size();
+    }
+
+    public void addCreature(Creatures creature) {
+        creatures.add(creature);
+    }
+
+    public void removeCreature(Creatures creature) {
+        int creatureIndex = creatures.indexOf(creature);
+        creatures.remove(creatureIndex);
+    }
 }

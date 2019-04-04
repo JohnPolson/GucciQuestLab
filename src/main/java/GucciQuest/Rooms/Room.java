@@ -8,4 +8,7 @@ public abstract class Room {
         this.name = name;
     }
 
+    public String getName() {
+        return this.name;
+    }
 }
