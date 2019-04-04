@@ -8,7 +8,7 @@ public enum Armours {
     Mithril("Mithril Vest", 35),
     Helmet("Helmet", 10),
     Cloak("Cloak of Invincibility", 50),
-    Hat("Baseball cap", 5);
+    GucciHat("Gucci Baseball cap", 110);
 
 
     private final String name, int value;

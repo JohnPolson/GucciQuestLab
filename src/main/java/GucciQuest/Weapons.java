@@ -8,7 +8,7 @@ public enum Weapons {
     Shovel("Shovel",10),
     Knife("Knife",8),
     Club("Club",15),
-    Spear("Spear",20),
+    GucciSpear("Gucci Spear",120),
     Flamethrower("Flamethrower",40),
     RabidHamster("RabidHamster",3),
     Bow("Bow & Arrows",15),
